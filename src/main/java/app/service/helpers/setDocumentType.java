@@ -1,0 +1,28 @@
+package app.service.helpers;
+
+import app.domain.DocumentTypeEnum;
+
+public class setDocumentType {
+    public static String getDocumentType(){
+
+        int option = 0;
+        String value = "";
+
+        switch (option){
+        case 1:
+        value = DocumentTypeEnum.CEDULA.getValue();
+            break;
+        case 2:
+            value = DocumentTypeEnum.PASAPORTE.getValue();
+            break;
+            case 3:
+                value = DocumentTypeEnum.CEDULA_EXTRANJERIA.getValue();
+                break;
+                case 4:
+                    value = DocumentTypeEnum.NIT.getValue();
+                    break;
+            default:
+                value = DocumentTypeEnum.CEDULA.getValue();
+        }
+    }
+}
